@@ -1,11 +1,24 @@
 """megoldás"""
 
 
-def eredmeny(jatekosPontjai, gepPontjai):
+def eredmeny(jatekoslapok, geplapok):
 
-    if jatekosPontjai > 21:
-        print("Játékos vesztett.")
-    elif gepPontjai > 21:
-        print("Gép vesztett.")
+    jatekos = pontszamitas(jatekoslapok)
+    gep = pontszamitas(geplapok)
+
+    if jatekos > 21:
+        print("Jatekos vesztett")
+    elif gep > 21:
+        print("Gep vesztett")
+
+
+def pontszamitas(lapok):
+
+    index = 0
+    pontok = 0
+    while index < lapok:
+        pontok =+ lapok[index]
+        index += 1
+    return pontok
 
 """tesztesetek"""
