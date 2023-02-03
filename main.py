@@ -37,7 +37,7 @@ def jatekosVesztettTeszt():
         print("Teszt megbukott. :(")
 
 
-def jatekosVesztettTeszt2():
+def gepVesztettTeszt():
 
     jatekosLista = [10, 5, 5]
     gepLista = [10, 10, 10]
@@ -50,7 +50,7 @@ def jatekosVesztettTeszt2():
         print("Teszt megbukott. :(")
 
 def tesztek():
-    jatekosVesztettTeszt2()
+    gepVesztettTeszt()
 
 
 tesztek()
