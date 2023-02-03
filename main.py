@@ -3,22 +3,42 @@
 
 def eredmeny(jatekoslapok, geplapok):
 
+    szoveg = ""
     jatekos = pontszamitas(jatekoslapok)
     gep = pontszamitas(geplapok)
 
     if jatekos > 21:
-        print("Jatekos vesztett")
+        szoveg = "Jatekos vesztett"
     elif gep > 21:
-        print("Gep vesztett")
-
+        szoveg = "Gep vesztett"
+    return szoveg
 
 def pontszamitas(lapok):
 
     index = 0
     pontok = 0
-    while index < lapok:
-        pontok =+ lapok[index]
+    while index < len(lapok):
+        pontok += lapok[index]
         index += 1
     return pontok
 
 """tesztesetek"""
+
+def jatekosVesztettTeszt():
+
+    jatekosLista = [6, 4, 8, 9]
+    gepLista = [6, 4, 11]
+    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    vartEredmeny = "Jatekos vesztett"
+
+    if kapottEredmeny == vartEredmeny:
+        print("Teszt sikeres. :)")
+    else:
+        print("Teszt megbukott. :(")
+
+
+def tesztek():
+    jatekosVesztettTeszt()
+
+
+tesztek()
