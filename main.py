@@ -15,6 +15,7 @@ def eredmeny(jatekoslapok, geplapok):
         szoveg = "Gép vesztett"
     return szoveg
 
+
 def pontszamitas(lapok):
 
     index = 0
@@ -30,97 +31,97 @@ def pontszamitas(lapok):
 """------------------------------------------------------------------------------------------------------------------"""
 
 
-def jatekosVesztettTesztElso():
+def jatekos_vesztett_teszt_elso():
 
-    jatekosLista = [10, 10, 10]
-    gepLista = [10, 5, 5]
-    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    jatekos_lista = [10, 10, 10]
+    gep_lista = [10, 5, 5]
+    kapott_eredmeny = eredmeny(jatekos_lista, gep_lista)
     # játékos meghaladja a 21-et
-    vartEredmeny = "Játekos vesztett"
+    vart_eredmeny = "Játekos vesztett"
 
-    if kapottEredmeny == vartEredmeny:
+    if kapott_eredmeny == vart_eredmeny:
         print("Teszt sikeres. :)")
     else:
         print("Teszt megbukott. :(")
 
 
-def jatekosVesztettTesztMasodik():
+def jatekos_vesztett_teszt_masodik():
 
-    jatekosLista = [10, 5, 4]
-    gepLista = [10, 5, 5]
-    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    jatekos_lista = [10, 5, 4]
+    gep_lista = [10, 5, 5]
+    kapott_eredmeny = eredmeny(jatekos_lista, gep_lista)
     # gép közelebb áll a 21-hez
-    vartEredmeny = "Játekos vesztett"
+    vart_eredmeny = "Játekos vesztett"
 
-    if kapottEredmeny == vartEredmeny:
+    if kapott_eredmeny == vart_eredmeny:
         print("Teszt sikeres. :)")
     else:
         print("Teszt megbukott. :(")
 
 
-def gepVesztettTesztElso():
+def gep_vesztett_teszt_elso():
 
-    jatekosLista = [10, 5, 5]
-    gepLista = [10, 10, 10]
-    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    jatekos_lista = [10, 5, 5]
+    gep_lista = [10, 10, 10]
+    kapott_eredmeny = eredmeny(jatekos_lista, gep_lista)
     # gép meghaladja a 21-et
-    vartEredmeny = "Gép vesztett"
+    vart_eredmeny = "Gép vesztett"
 
-    if kapottEredmeny == vartEredmeny:
+    if kapott_eredmeny == vart_eredmeny:
         print("Teszt sikeres. :)")
     else:
         print("Teszt megbukott. :(")
 
 
-def gepVesztettTesztMasodik():
+def gep_vesztett_teszt_masodik():
 
-    jatekosLista = [10, 5, 5]
-    gepLista = [10, 5, 4]
-    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    jatekos_lista = [10, 5, 5]
+    gep_lista = [10, 5, 4]
+    kapott_eredmeny = eredmeny(jatekos_lista, gep_lista)
     # játékos közelebb áll a 21-hez
-    vartEredmeny = "Gép vesztett"
+    vart_eredmeny = "Gép vesztett"
 
-    if kapottEredmeny == vartEredmeny:
+    if kapott_eredmeny == vart_eredmeny:
         print("Teszt sikeres. :)")
     else:
         print("Teszt megbukott. :(")
 
 
-def mindkettoVeszitTeszt():
+def mindketto_veszit_teszt():
 
-    jatekosLista = [10, 10, 10]
-    gepLista = [10, 10, 10]
-    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    jatekos_lista = [10, 10, 10]
+    gep_lista = [10, 10, 10]
+    kapott_eredmeny = eredmeny(jatekos_lista, gep_lista)
     # játékos és gép pontjainak száma meghaladja a 21-et
-    vartEredmeny = "Gép vesztett"
+    vart_eredmeny = "Gép vesztett"
 
-    if kapottEredmeny == vartEredmeny:
+    if kapott_eredmeny == vart_eredmeny:
         print("Teszt sikeres. :)")
     else:
         print("Teszt megbukott. :(")
 
 
-def jatekosGepDontetlen():
+def jatekos_gep_dontetlen():
 
-    jatekosLista = [10, 10, 4]
-    gepLista = [10, 10, 4]
-    kapottEredmeny = eredmeny(jatekosLista, gepLista)
+    jatekos_lista = [10, 10, 4]
+    gep_lista = [10, 10, 4]
+    kapott_eredmeny = eredmeny(jatekos_lista, gep_lista)
     # játékos és gép pontjainak száma megeggyezik
-    vartEredmeny = "Gép vesztett"
+    vart_eredmeny = "Gép vesztett"
 
-    if kapottEredmeny == vartEredmeny:
+    if kapott_eredmeny == vart_eredmeny:
         print("Teszt sikeres. :)")
     else:
         print("Teszt megbukott. :(")
 
 
 def tesztek():
-    jatekosVesztettTesztElso()
-    jatekosVesztettTesztMasodik()
-    gepVesztettTesztElso()
-    gepVesztettTesztMasodik()
-    mindkettoVeszitTeszt()
-    jatekosGepDontetlen()
+    jatekos_vesztett_teszt_elso()
+    jatekos_vesztett_teszt_masodik()
+    gep_vesztett_teszt_elso()
+    gep_vesztett_teszt_masodik()
+    mindketto_veszit_teszt()
+    jatekos_gep_dontetlen()
 
 
 tesztek()
